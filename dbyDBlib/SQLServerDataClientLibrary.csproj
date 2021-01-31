@@ -4,10 +4,33 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>Debugyou.SQLServer.DataClientLibrary</AssemblyName>
     <RootNamespace>Debugyou.SQLServer.DataClient</RootNamespace>
+    <Copyright>(c) debugyou ltd, 2020</Copyright>
+    <Description>Library of basic functions to run SQL Server stored procedures and functions (table and scalar)</Description>
+    <RepositoryUrl>https://github.com/elvisbaldie/dbyDB.git</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageProjectUrl>https://debugyou.net</PackageProjectUrl>
+    <PackageIcon>favicon-96x96.png</PackageIcon>
+    <Authors>Elvis Baldie, debugyou ltd</Authors>
+    <Company>debugyou ltd</Company>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageTags>SQL Server Data Client Library</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\icons\favicon-96x96.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
