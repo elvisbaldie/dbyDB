@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLServerDataClientLibrary", "..\dbyDBlib\SQLServerDataClientLibrary.csproj", "{92E4F8C6-61CA-4540-8BC4-70B4266030C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLServerDataClientLibraryNUnitTestProject", "..\dbyDBLibNUnitTestProject\SQLServerDataClientLibraryNUnitTestProject.csproj", "{57B54783-6C97-4478-A5FE-E02B782B9709}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E4F8C6-61CA-4540-8BC4-70B4266030C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E4F8C6-61CA-4540-8BC4-70B4266030C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E4F8C6-61CA-4540-8BC4-70B4266030C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E4F8C6-61CA-4540-8BC4-70B4266030C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B54783-6C97-4478-A5FE-E02B782B9709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B54783-6C97-4478-A5FE-E02B782B9709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B54783-6C97-4478-A5FE-E02B782B9709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B54783-6C97-4478-A5FE-E02B782B9709}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56D2EA29-FFEA-44E3-91C2-391155071F13}
+	EndGlobalSection
+EndGlobal

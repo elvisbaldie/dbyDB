@@ -1,8 +1,0 @@
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\bin\Debug\netcoreapp3.1\Debugyou.dbyDBlib.deps.json
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\bin\Debug\netcoreapp3.1\Debugyou.dbyDBlib.dll
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\bin\Debug\netcoreapp3.1\Debugyou.dbyDBlib.pdb
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\obj\Debug\netcoreapp3.1\DBlib.AssemblyInfoInputs.cache
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\obj\Debug\netcoreapp3.1\DBlib.AssemblyInfo.cs
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\obj\Debug\netcoreapp3.1\DBlib.csproj.CoreCompileInputs.cache
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\obj\Debug\netcoreapp3.1\Debugyou.dbyDBlib.dll
-D:\Michael\debugyou\SQL\CSharp\dbyDBlib\obj\Debug\netcoreapp3.1\Debugyou.dbyDBlib.pdb

@@ -10,7 +10,9 @@ namespace Debugyou.SQLServer.DataClient
 	interface IdbyDB
 	{
 		string ConnectionString { get; }
-		Tuple<int?,DataSet> Procedure(string procedurename, List<SqlParameter> parameters);
+		Tuple<int?,DataSet> StoredProcedure(string procedurename, List<SqlParameter> parameters);
+
+		Tuple<int?, DataSet> StoredProcedure(string procedurename);
 
 		object ScalarFunction(string functionname, List<SqlParameter> parameters);
 		object ScalarFunction(string functionname);

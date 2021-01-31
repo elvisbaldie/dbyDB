@@ -1,4 +1,0 @@
-D:\Michael\debugyou\SQL\CSharp\dbyDBlibExtended\obj\Debug\netcoreapp3.1\dbyDBlibExtended.csprojAssemblyReference.cache
-D:\Michael\debugyou\SQL\CSharp\dbyDBlibExtended\obj\Debug\netcoreapp3.1\dbyDBlibExtended.AssemblyInfoInputs.cache
-D:\Michael\debugyou\SQL\CSharp\dbyDBlibExtended\obj\Debug\netcoreapp3.1\dbyDBlibExtended.AssemblyInfo.cs
-D:\Michael\debugyou\SQL\CSharp\dbyDBlibExtended\obj\Debug\netcoreapp3.1\dbyDBlibExtended.csproj.CoreCompileInputs.cache

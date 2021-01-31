@@ -38,7 +38,7 @@ namespace Debugyou.SQLServer.DataClient
         protected readonly string m_connectionstring = null;
 
         /// 
-        ///     Procedure
+        ///     StoredProcedure
         ///     
         ///     (c) debugyou ltd, 2021
         /// 
@@ -47,7 +47,7 @@ namespace Debugyou.SQLServer.DataClient
         /// <param name="parameters">List of SqlParameters to be supplied to the stored procedure</param>
         /// <param name="results">DataSet containing results selected by the stored procedure that we called</param>
         /// <returns>Whatever integer value was retrieved by the stored proc</returns>
-        public Tuple<int?,DataSet> Procedure(string procedurename, List<SqlParameter> parameters)
+        public Tuple<int?,DataSet> StoredProcedure(string procedurename, List<SqlParameter> parameters)
         {
             //  At this point we may consider some sanity checks on the input parameters
             if (string.IsNullOrWhiteSpace(m_connectionstring)) throw new ArgumentException( "Connection string parameter cannot be null, empty or whitespace",nameof(m_connectionstring));
@@ -110,6 +110,8 @@ namespace Debugyou.SQLServer.DataClient
                             //  First we fill the result set...
                             adapter.Fill(results);
 
+                            if (preturn!=null) { returnvalue = (int?)preturn.Value; }
+
                             //  Now we extract the return value and return the parameters
                             if (parameters != null)
                             {
@@ -119,7 +121,6 @@ namespace Debugyou.SQLServer.DataClient
                                     if (p.Direction == ParameterDirection.ReturnValue)
                                     {
                                         //  We've found a return value parameter
-                                        returnvalue = (int?)p.Value;
                                         if (wereWePassedAReturnParameter)
 										{
                                             //  If we were passed a return parameter in the first place then 
@@ -158,19 +159,48 @@ namespace Debugyou.SQLServer.DataClient
         /// <param name="parameters">List of SqlParameters to be supplied to the stored procedure</param>
         /// <param name="results">DataSet containing results selected by the stored procedure that we called</param>
         /// <returns>Whatever integer value was retrieved by the stored proc</returns>
-        public async Task<Tuple<int?,DataSet>> ProcedureAsync(string procedurename, List<SqlParameter> parameters)
+        public async Task<Tuple<int?,DataSet>> StoredProcedureAsync(string procedurename, List<SqlParameter> parameters)
         {
             //  Let us do our sanity checks as early as possible so that we can throw exceptions in the main thread 
             if (string.IsNullOrWhiteSpace(m_connectionstring)) throw new ArgumentException( "Connection string parameter cannot be null, empty or whitespace",nameof(m_connectionstring));
             if (string.IsNullOrWhiteSpace(procedurename)) throw new ArgumentException("Procedure name cannot be null, empty or whitespace", nameof(procedurename));
 
-            var returnvalue = await Task.Run(()=>Procedure(procedurename, parameters));
+            var returnvalue = await Task.Run(()=>StoredProcedure(procedurename, parameters));
 
             //  We return the return value. Note that this defaults to zero, but it can under some circumstances be null.
             return returnvalue;
         }
 
+        /// 
+        ///     StoredProcedure
+        ///     
+        ///     (c) debugyou ltd, 2021
+        /// 
+        /// <summary>run a stored procedure</summary>
+        /// <param name="procedurename">name of the store procedure to be run</param>
+        /// <param name="results">DataSet containing results selected by the stored procedure that we called</param>
+        /// <returns>Whatever integer value was retrieved by the stored proc</returns>
+        public Tuple<int?, DataSet> StoredProcedure(string procedurename)
+        {
+            //  We return the return value along with the results
+            return StoredProcedure(procedurename, null);
+        }
 
+        /// 
+        ///     StoredProcedureAsync
+        ///     
+        ///     (c) debugyou ltd, 2021
+        /// 
+        /// <summary>run a stored procedure</summary>
+        /// <param name="procedurename">name of the store procedure to be run</param>
+        /// <param name="results">DataSet containing results selected by the stored procedure that we called</param>
+        /// <returns>Whatever integer value was retrieved by the stored proc</returns>
+        public async Task<Tuple<int?, DataSet>> StoredProcedureAsync(string procedurename)
+        {
+            //  We return the return value along with the results
+            var result = await Task.Run(() => StoredProcedure(procedurename, null));
+            return result;
+        }
 
         /// 
         ///     ScalarFunction

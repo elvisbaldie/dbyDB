@@ -11,7 +11,9 @@ namespace Debugyou.SQLServer.DataClient
 	{
 		string ConnectionString { get; }
 
-		Task<Tuple<int?, DataSet>> ProcedureAsync(string procedurename, List<SqlParameter> parameters);
+		Task<Tuple<int?, DataSet>> StoredProcedureAsync(string procedurename, List<SqlParameter> parameters);
+
+		Task<Tuple<int?, DataSet>> StoredProcedureAsync(string procedurename);
 
 		Task<object> ScalarFunctionAsync(string functionname, List<SqlParameter> parameters);
 		Task<object> ScalarFunctionAsync(string functionname);
