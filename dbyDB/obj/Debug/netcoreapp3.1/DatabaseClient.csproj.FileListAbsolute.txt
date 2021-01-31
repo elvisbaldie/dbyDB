@@ -1,0 +1,12 @@
+D:\Michael\debugyou\SQL\CSharp\dbyDB\bin\Debug\netcoreapp3.1\DatabaseClient.exe
+D:\Michael\debugyou\SQL\CSharp\dbyDB\bin\Debug\netcoreapp3.1\DatabaseClient.deps.json
+D:\Michael\debugyou\SQL\CSharp\dbyDB\bin\Debug\netcoreapp3.1\DatabaseClient.runtimeconfig.json
+D:\Michael\debugyou\SQL\CSharp\dbyDB\bin\Debug\netcoreapp3.1\DatabaseClient.runtimeconfig.dev.json
+D:\Michael\debugyou\SQL\CSharp\dbyDB\bin\Debug\netcoreapp3.1\DatabaseClient.dll
+D:\Michael\debugyou\SQL\CSharp\dbyDB\bin\Debug\netcoreapp3.1\DatabaseClient.pdb
+D:\Michael\debugyou\SQL\CSharp\dbyDB\obj\Debug\netcoreapp3.1\DatabaseClient.AssemblyInfoInputs.cache
+D:\Michael\debugyou\SQL\CSharp\dbyDB\obj\Debug\netcoreapp3.1\DatabaseClient.AssemblyInfo.cs
+D:\Michael\debugyou\SQL\CSharp\dbyDB\obj\Debug\netcoreapp3.1\DatabaseClient.csproj.CoreCompileInputs.cache
+D:\Michael\debugyou\SQL\CSharp\dbyDB\obj\Debug\netcoreapp3.1\DatabaseClient.dll
+D:\Michael\debugyou\SQL\CSharp\dbyDB\obj\Debug\netcoreapp3.1\DatabaseClient.pdb
+D:\Michael\debugyou\SQL\CSharp\dbyDB\obj\Debug\netcoreapp3.1\DatabaseClient.genruntimeconfig.cache
