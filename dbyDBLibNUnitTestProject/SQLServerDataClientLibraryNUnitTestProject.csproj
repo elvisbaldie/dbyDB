@@ -17,4 +17,8 @@
     <ProjectReference Include="..\dbyDBlib\SQLServerDataClientLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+
 </Project>

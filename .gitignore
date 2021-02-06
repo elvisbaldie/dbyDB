@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+dbyDB/.vs/Debugyou.SQLServerDataClient/v16/.suo
+dbyDBlib/obj/Debug/netcoreapp3.1/SQLServerDataClientLibrary.csprojAssemblyReference.cache
+dbyDBlib/obj/Release/netcoreapp3.1/SQLServerDataClientLibrary.csprojAssemblyReference.cache
+dbyDBLibNUnitTestProject/obj/Debug/netcoreapp3.1/SQLServerDataClientLibraryNUnitTestProject.csprojAssemblyReference.cache
+dbyDBLibNUnitTestProject/obj/Release/netcoreapp3.1/SQLServerDataClientLibraryNUnitTestProject.csprojAssemblyReference.cache
+dbyDBlib/obj/Debug/netcoreapp3.1/SQLServerDataClientLibrary.csproj.FileListAbsolute.txt
